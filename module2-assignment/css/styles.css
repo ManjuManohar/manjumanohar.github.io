@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+body{
+    padding:0;
+    margin:0;
+}
+h2{
+    margin:0;
+}
+body{
+    background-color: #050504;
+    font-family: 'source sans pro';
+}
+.page-title
+{
+    text-align:center;
+    color:aliceblue
+}
+.first-block-content,.second-block-content,.third-block-content
+{
+    box-sizing: border-box;
+    padding:40px 10px 0px 10px;
+}
+
+.first-block,
+.second-block,
+.third-block {
+    box-sizing: border-box;
+    margin: 10px;
+    float:left;
+    overflow:scroll;
+    height:250px;
+}
+
+.first-block
+{
+    background-color: #DEB2A8;
+}
+.second-block {
+    background-color: #A9C291;
+}
+.third-block {
+    background-color: #DCDAD5;
+}
+.title-chicken,.title-beef,.title-sushi
+{  
+    text-align:center;
+    background-color:white;
+    width:124px;
+    float:right;
+}
+
+@media (min-width:992px)
+{
+.first-block,
+    .second-block,
+    .third-block {
+        width:calc((100%/3) - 20px);
+    }
+}
+@media (min-width:768px) and (max-width:991px)
+{
+.first-block,
+    .second-block
+    {
+            width: calc(50% - 20px);
+        }
+    .third-block {
+        width: calc(100% - 20px);
+    }
+}
+@media (max-width:767px)
+{
+    .first-block,
+        .second-block,
+        .third-block {
+            width: calc(100% - 20px);
+        }
+}
